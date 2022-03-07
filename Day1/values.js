@@ -1,0 +1,1 @@
+// values are bit chunks which represent information
