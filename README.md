@@ -1,7 +1,5 @@
 # The #100DaysofCode Challenge
 
-:trollface:
-
 An 100 day challenge where I strive to expand & develop current & new skills & technologies as a Frontend Developer.
 
 ## The Challenge
