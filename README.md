@@ -25,7 +25,7 @@ An 100 day challenge where I strive to expand & develop current & new skills & t
 |     |                 | ```NaN``` means "not a number", is displayed when numeric operations don't create a meaningful result                                  |
 |     | Operators       | Operators are symbols such as ```*``` and ```/```                                                                                      |
 |     |                 | Putting an operator between values will apply it to those values and create a new value as a result                                    |
-|     |                 | When operators appear together without parentheses, the order they are applied is to do with their [precendence](https://google.co.uk) |
+|     |                 | When operators appear together without parentheses, the order they are applied is to do with their [precendence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table) |
 |     |                 | **Unary Operators** are operators which only take *1 value*                                                                            |
 |     |                 | **Binary Operators** are operators which take *2 values*                                                                               |
 |     |                 | ```typeof``` produces a string value naming the data type you give it. e.g. ```console.log(typeof "x") -> string```                    |
