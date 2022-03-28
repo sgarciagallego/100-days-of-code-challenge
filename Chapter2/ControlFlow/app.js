@@ -15,3 +15,5 @@ console.log(String(stringNumber) + " is my age");   // * the "String" function c
 
 let booleanValue = "";
 console.log(Boolean(booleanValue));   // * the "Boolean" function converts data type to a boolean
+
+// trivial  schematic representation of a straight line control flow: -->
