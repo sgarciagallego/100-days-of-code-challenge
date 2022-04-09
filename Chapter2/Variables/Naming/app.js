@@ -3,3 +3,5 @@
 // ! variable names may include "$" and the "_", but no other punctuation
 
 // ! words with special meaning (keywords) such as let cannot be used
+
+// ! Remember to use camel case capitalization
