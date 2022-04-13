@@ -39,9 +39,9 @@ for (let fizzBuzz = 1; fizzBuzz <= 100; fizzBuzz = fizzBuzz + 1) {
 
 /*
   ! Explanation
-  ? Line 53 - for loop (the first expression initialises the loop [by declaring a variable], the second expression checks whether the loop should continue, the third expression updates the state of the loop after every repetition/iteration)
-  ? Line 54 - remainder (%) operator is an easy way of detecting whether a number is divisible by 15. IF IT IS, the remainder of their division i 0.
-  ? Line 56 - checking to see whether the number outputted is divisible by 3. IF IT IS, the remainder of their division is 0.
-  ? Line 58 - checking to see whether the number outputted is divisble by 5. IF IT IS, the remainder of their division is 0.
+  ? Line 28 - for loop (the first expression initialises the loop [by declaring a variable], the second expression checks whether the loop should continue, the third expression updates the state of the loop after every repetition/iteration)
+  ? Line 29 - remainder (%) operator is an easy way of detecting whether a number is divisible by 15. IF IT IS, the remainder of their division i 0.
+  ? Line 31 - checking to see whether the number outputted is divisible by 3. IF IT IS, the remainder of their division is 0.
+  ? Line 33 - checking to see whether the number outputted is divisble by 5. IF IT IS, the remainder of their division is 0.
   ? Line 61 - at the end of the loop, if Fizz, Buzz, or FizzBuzz have not been outputted, the program outputs the variable containing the number count it's on.
 */
