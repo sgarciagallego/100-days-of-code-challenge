@@ -14,9 +14,6 @@
 
 alert("Write a loop that makes seven calls to console.log() to output a triangle with #");
 
-let triangleCreation = "#";
-
-while (triangleCreation.length <= 10) {
-  console.log(triangleCreation);
-  triangleCreation = triangleCreation + "#";
+for (let triangleCreate = "#"; triangleCreate.length <= 8; triangleCreate += "#") {
+  console.log(triangleCreate);
 }

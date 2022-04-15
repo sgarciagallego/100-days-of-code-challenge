@@ -11,5 +11,4 @@ while (number <= 12) {
 
 /* 
   * the for loop groups together all the statements related to the "state" of the loop
-  ? 
 */
