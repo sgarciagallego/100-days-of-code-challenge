@@ -18,7 +18,7 @@ function scope() {
 
 scope();    // -> logs 25/08/03 to console
 
-console.log(xMas);    // -> Uncaught ReferenceError: xMas is not defined - does not pass to the console
+// console.log(xMas); -> Uncaught ReferenceError: xMas is not defined - does not pass to the console
 
 /* 
   ? FUN FACT - in pre-ES6 JavaScript, only functions created new scopes
@@ -27,17 +27,20 @@ console.log(xMas);    // -> Uncaught ReferenceError: xMas is not defined - does 
   example below
 */
 
-let variable = 10;
+let oneLet = 10;
 if (true) {
-  let anotherVar = 20;
+  let anotherLet = 20;
   var lastVar = 30;
 
-  console.log(variable + anotherVar + lastVar);
+  console.log(oneLet + anotherLet + lastVar);
   // -> 60
 }
 
-console.log(variable + anotherVar + lastVar);
-// -> error: anotherVar not defined as post ES6 JS variable declared
+console.log(oneLet + lastVar);
+// -> 40 (lastVar variable delcared with pre ES6 "var", can be seen in global scope)
+
+
+// ! when the code inside the halve function refers to n, it's seeing it's own n, not the global n
 
 const halve = function(n) {
   return n / 2;
@@ -45,9 +48,9 @@ const halve = function(n) {
 
 let n = 10;
 
-console.log(halve(100));    // -> 50
+console.log(halve(100));    // -> 50 (function n is input divided by 2 - line 46)
 
-console.log(n);     // -> 10
+console.log(n);     // -> 10 (variable declared named n - line 49)
 
 
 
