@@ -15,28 +15,6 @@ function logger() {
 
 logger();   // * this is how you call a function - a function invocation
 
-/*
-  TODO - The JavaScript Scope
-
-  ? when you create a function, the set of tasks enlaced within the function will only be available inside the function - i.e. a variable created within a function will not be available outside the function with the variable
-  * The Global Scope - the variables declared global, an example being in like 3
-  * The Function Scope - the variables declared within a function, an example being on Line 7
-  ! Variables declared in the global scope are available in a function but variables declared within the function scope are only available within that specific function scope
-*/
-
-// An example below
-
-let myBirthday = "25/08/03";
-
-function scope() {
-  console.log(myBirthday);    // -> passes to console through the function invocation in line 34
-  let xMas = "25/12/XX";    // creation a variable within the function scope
-}
-
-scope();    // -> logs 25/08/03 to console
-
-console.log(xMas);    // -> Uncaught ReferenceError: xMas is not defined - does not pass to the console
-
 // ---------------
 
 const square = function(x) {
