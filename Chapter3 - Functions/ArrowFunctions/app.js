@@ -38,3 +38,23 @@ const horn = () => {
 
 horn();   // -> "Toot" - function invocation
 
+// TODO - Understand Arrow Function
+
+// before
+
+hello = function() {
+  return "Hello World!";
+};
+
+// after
+
+hello = () => {
+  return "Hello World!";
+};
+
+/*
+  ! function name = hello
+  ! function keyword = "=>"
+  ! function parameters as usual inside parentheses (if more than 1), and if only one no parentheses needed
+  
+*/
