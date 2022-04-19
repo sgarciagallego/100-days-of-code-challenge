@@ -17,7 +17,10 @@ console.log(wrap1());     // -> 1
 
 console.log(wrap2());     // -> 2
 
-// ! above is a good demonstration that local bindings are created anew for every call
+/*
+  ! above is a good demonstration that local bindings are created anew for every call
+  * the explicit local binding from the wrapValue example isn't really needed since a parameter is itself a local binding
+*/
 
 // * Closure - being able to reference a specific instance of a local binding in an enclosing scope
 
@@ -30,3 +33,5 @@ let timesThree = multiplier(3);
 
 console.log(twice(5));        // -> 10
 console.log(timesThree(5));   // -> 15
+
+// ! a good mental model for thinking of function values is as containing both 1. the code in their body and 2. the environment in which they're created
