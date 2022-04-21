@@ -1,4 +1,4 @@
-// write a function "min" that takes to arguments and returns their minimum
+// write a function "min" that takes 2 arguments and returns their minimum
 
 function findMin(param1, param2) {
   return Math.min(param1, param2);
