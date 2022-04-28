@@ -54,3 +54,15 @@ console.log(Object.keys({x: 0, y: 0, z: 2}));
 // -> ["x", "y", "z"]
 
 // ! as you can see (line 53), when you give it an object, it returns an array of strings - which are the object's property names
+
+// * Object.assign function copies all properties from one object to another 
+
+let ObjectA = {a: 1, b: 2};
+Object.assign(ObjectA, {b: 3, c: 4});
+console.log(ObjectA);
+
+// * Arrays - objects specialised for storing sequences of data
+
+// ? did you know - if you evaluate typeof [] it produces "object"
+
+console.log(typeof []);
