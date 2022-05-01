@@ -83,9 +83,46 @@ addJournalEntry([
   if the variable is true: 1
 */
 
+// ! we can represent a 2-by-2 table in JavaScript with a four element array [76, 9, 4, 1]
 
+// function that computes the phi coefficient from the array seen above
 
+function phi(table) {
+  return (table[3] * table[0] - table[2] * table[1]) / 
+  Math.sqrt((table[2] + table[3]) *
+  (table[0] + table[1]) *
+  (table[1] + table[3]) *
+  (table[0] + table[2]));
+}
 
+console.log(phi([76, 9, 4, 1]));  // -> 0.068599434057...
 
+// * Math.sqrt - the square root function
+
+/*
+  ! Explanation of the above function and how it finds the variable correlation
+
+  ? Line 90 - defining a function called "phi" with 1 parameter: "table"
+  ? Line 91->95 - placing the mathematical equation of the phi coefficient into JavaScript (seen in the HTML page if you load into live server)
+  ? Line 98 - fetching the 2-by-2 table example data and placing it into the four element array
+*/
+
+// ! to extract a two-by-two table from a specific event from the journal, we must loop over all the entries and tally how many times the event occurs
+
+function tableFor(event, journal) {
+  let table = [0, 0, 0, 0];
+  for (let i = 0; i < journal.length; i++) {
+
+    let entry = journal[i], index = 0;
+    if (entry.events.includes(event)) index += 1;
+    if (entry.squirrel) index += 2;
+    table[index] += 1;
+  }
+  return table;
+}
+
+console.log(tableFor("pizza", JOURNAL));
+
+// * "includes" method (line 117) - checks whether a given value exists in the array
 
 
