@@ -125,4 +125,11 @@ console.log(tableFor("pizza", JOURNAL));
 
 // * "includes" method (line 117) - checks whether a given value exists in the array
 
-
+/*
+  ! explanation of the above code
+  ? line 112 - creating a function called "tableFor" with 2 parameters: event & journal
+  ? line 113 - creating a variable called table with an array of 4 items
+  ? line 114 - for loop, creating a variabled called i, if i is less than the length of whatever the string value of journal is, then the value of i will increment by 1
+  ? line 116 - creating a variable called entry and assigning it the value of the 2nd array item of journal and also creating another variable which is assigned the number value of 0
+  ? line 117 - if statement = if the value assigned to entry is included in the value of events, the value of index will equal 1
+*/
