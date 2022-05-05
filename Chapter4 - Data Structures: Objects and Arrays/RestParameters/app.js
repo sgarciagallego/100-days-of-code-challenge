@@ -38,3 +38,9 @@ let numbers = [5, 1, 7];
 
 console.log(max(...numbers));   // -> 7
 
+// ! square brackets array notation allows the triple-dot operator (rest syntax) to spread another array into the new array
+
+let words = ["never", "fully"];
+
+console.log(["will", ...words, "understand"].join(" "));   // -> will never full understand
+
