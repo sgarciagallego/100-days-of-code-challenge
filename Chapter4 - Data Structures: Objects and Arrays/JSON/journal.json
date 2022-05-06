@@ -1,0 +1,5 @@
+{
+  "desc": "Lycanthrope Data entry",
+  "squirrel": false,
+  "events": ["work", "touched tree", "pizza", "running"]
+}
