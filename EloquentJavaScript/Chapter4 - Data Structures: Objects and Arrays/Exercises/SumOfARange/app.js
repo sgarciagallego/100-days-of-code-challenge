@@ -16,7 +16,7 @@ function range(start, end, step = start < end ? 1 : -1) {
   return array;
 }
 
-console.log(range(5, 7));
+console.log(range(5, 10));      // -> [5, 6, 7, 8, 9, 10]
 
 /*
   ! Explanation of the above code
