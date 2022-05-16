@@ -41,9 +41,11 @@ console.log(rest);    // -> ["D", "E", "F"]
 // ! Useful: we can use the spread operator to combine arrays
 
 const newArray = [...alphabet, ...numbers];
+const newArray2 = alphabet.concat(numbers);
 
 console.log(newArray);  
-// -> ["A", "B", "C", "D", "E", "F", "1", "2", "3", "4", "5", "6"]
+console.log(newArray2);
+// -> both output ["A", "B", "C", "D", "E", "F", "1", "2", "3", "4", "5", "6"]
 
 // ! Useful: dealing with functions and returning more than one parameter from a function
 
@@ -59,3 +61,18 @@ const [sum, multiply] = sumAndMultiply(2, 3);
 
 console.log(sum);         // -> 5
 console.log(multiply);    // -> 6
+
+// TODO - Making my own function destructuring array
+
+function divideAndSubtract(c, d) {
+  return[c / d, c - d];
+}
+
+const [divide, subtract, opt = "no division"] = divideAndSubtract(10, 2);
+// 0th index of array picks up the 0th index of the return output of the function (division)
+// 1st index of array picks the 1st index of the return output of the function (subtraction)
+
+console.log(divide);
+console.log(subtract);
+console.log(opt); // -> because there's no 3rd parameter in the function
+
