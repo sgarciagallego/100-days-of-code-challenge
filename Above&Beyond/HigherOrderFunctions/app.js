@@ -53,7 +53,7 @@ const filteredPosts = posts.filter(post => {
   return post.userId === 5;
 });
 
-console.log(filteredPosts);
+console.log(filteredPosts);   // -> filters from the object data with the userId of 5 
 
 // --------------------
 
