@@ -1,9 +1,9 @@
 //  * Callback Function - in a nutshell, a callback is a function that's passed into another function and is called inside that function for the purpose of completing some sort of routine or action
 
-const button = document.querySelector("button");
+const body = document.querySelector("body");
 
 function toggle() {
-  button.classList.toggle("altColor");
+  body.classList.toggle("altColor");
 }
 
 
@@ -21,7 +21,7 @@ toggle();   // ! now the function has been called, the button turns red
 
 // ? now we are going to look at how we can toggle the function when the button has been clicked - using a callback function to toggle the function when certain instances are met
 
-button.addEventListener("click", toggle);
+body.addEventListener("click", toggle);
 
 /*
   * Event Listener - a JavaScript function which waits for an event to occur
