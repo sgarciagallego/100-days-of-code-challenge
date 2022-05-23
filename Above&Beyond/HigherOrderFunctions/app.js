@@ -86,11 +86,3 @@ const reducedPostsValue = mappedPosts.reduce((sum, post) => {
 console.log(reducedPostsValue);
 
 // lines 82-84 - adds all the values together from the array from mappedPosts
-
-// -------------------
-
-/*
-  ! 5th Type of Higher-Order Function
-
-  * Set() - 
-*/

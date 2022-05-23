@@ -6,8 +6,6 @@ function toggle() {
   body.classList.toggle("altColor");
 }
 
-
-
 /*
   ! Explanation of the above function
 
