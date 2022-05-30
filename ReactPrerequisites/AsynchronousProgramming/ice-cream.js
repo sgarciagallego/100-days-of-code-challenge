@@ -127,7 +127,7 @@ order(0, production);
 
 // for this to happen, let's create a variable in JavaScript
 
-let is_shop_open = true;
+let is_shop_open = false;
 
 let promiseOrder = (time, work) => {
 
@@ -172,4 +172,71 @@ promiseOrder(2000, () => console.log(`A ${stock.fruits[0]} was selected.`))
 })
 .then(() => {
   return promiseOrder(2000, () => console.log("The ice-cream has been served successfully."));
+})
+
+/*
+  ! to catch our errors, let's change our variable to false (line 130)
+  * catch() handler - returns a promise, but only when our original promise from .then() was rejected
+*/
+
+.catch(() => {
+  console.log("The customer has left.");
+
+  // our shop has closed (rejection from else statement in line 144)
+  // the customer has left (catch handler from here)
+})
+
+// * finally() handler - works regardless of whether our promise was resolved or rejected
+
+.finally(() => {
+  console.log("It has reached the end of the day.");
+
+  // it has reached the end of the day (finally handler from here)
 });
+
+// TODO - async/await in JavaScript
+
+// ! before async/await, to make a promise we wrote this:
+
+// function order() {
+  // return new Promise((resolve, reject) => {
+      // write code here
+  // });
+// }
+
+// ! no using async/await, we write one like this:
+
+async function asyncOrder() {
+  // write code here
+}
+
+/*
+  ! we have to understand try and catch properly first
+  TODO - Using Try and Catch Keywords
+
+  * try - used to run our code
+  * catch - used to catch errors
+*/
+
+// this is using async/await, instead of resolve/reject
+
+async function kitchen() {
+  try{
+    // fake problem
+    await abc;
+  }
+  catch(err) {
+    console.log("abc does not exist.", err);
+  }
+  finally{
+    console.log("runs code anyways.");
+  }
+}
+
+kitchen();    // run the code
+
+/*
+  TODO - Await in JavaScript
+
+  * await - makes a JavaScript wait until a promise settles and returns its result
+*/
